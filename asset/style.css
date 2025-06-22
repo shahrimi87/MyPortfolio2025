@@ -519,6 +519,82 @@ footer {
   width: 100%;
 }
 
+
+* Tambah dalam CSS utama atau buat fail responsive.css */
+@media screen and (max-width: 768px) {
+
+  /* NAVIGATION */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  nav .logo {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero img {
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .hero .btn, .hero audio {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+
+  .hero .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+font-size: 5vw; /* Ikut saiz skrin */
+
 @keyframes floatimage {
   0% { transform: translateY(0); }
   50% { transform: translateY(-2.4rem); }
